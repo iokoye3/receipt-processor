@@ -1,0 +1,4 @@
+com\example\receiptprocessor\App.class
+com\example\receiptprocessor\controller\ReceiptController.class
+com\example\receiptprocessor\model\Receipt.class
+com\example\receiptprocessor\model\Item.class

@@ -1,0 +1,25 @@
+-------------------------------------------------------------------------------
+Test set: com.example.receiptprocessor.AppTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.544 s <<< FAILURE! - in com.example.receiptprocessor.AppTest
+testGetPoints  Time elapsed: 0.523 s  <<< ERROR!
+com.fasterxml.jackson.databind.exc.InvalidDefinitionException: 
+Cannot construct instance of `com.example.receiptprocessor.model.Receipt` (no Creators, like default constructor, exist): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: (String)"{
+  "retailer": "M&M Corner Market",
+  "purchaseDate": "2022-01-01",
+  "purchaseTime": "13:01",
+  "items": [
+    {
+      "shortDescription": "Mountain Dew 12PK",
+      "price": "6.49"
+    },
+    {
+      "shortDescription": "Doritos Nacho Cheese",
+      "price": "3.99"
+    }
+  ],
+  "total": "10.48"
+}"; line: 2, column: 3]
+	at com.example.receiptprocessor.AppTest.testGetPoints(AppTest.java:40)
+
